@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="text-align: center; margin: 20px 0;">
+        <h1 style="margin: 0;">Your Basket</h1>
+    </header>    
+    <section id="menu">
+        <div id="basket-container">
+            <!-- Items will be dynamically loaded here -->
+        </div>
+        <div>
+            <h2>Total Cost: <span id="total-cost">0.00</span></h2>
+        </div>
+        <button id="clearBasket" onclick="clearBasket()">Clear Basket</button>
+        <a id="Back_to_Menu" href="index.html">Back to Menu</a>
+        <h2>Additional notes</h2>
+
+        <div>
+            <div style="display: flex; align-items: center; height: 10vh;">
+                <input name="tableware" type="checkbox" style="margin-right: 10px;">
+                <img width="52px" style="border: 1px solid black; border-radius: 50%; margin-right: 10px;" src="https://cdn.salla.sa/XGzNb/m3wBXbbi0U5wTgqAkwUxuTzHf98bSB3EbUALGg1c.jpg" alt="tableware">
+                <div>
+                    Save the environment and don't<br>
+                    order Cutlery only when needed
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: flex; align-items: center; height: 10vh;">
+                <input id="note-checkbox" name="Add a note" type="checkbox" style="margin-right: 10px;" onchange="toggleTextarea(this)">
+                <img width="52px" style="border: 1px solid black; border-radius: 50%; margin-right: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Google_Messages_logo.svg" alt="Add a note">
+                <textarea id="note-textarea" name="Add a note" cols="30" rows="3" style="flex: 1;" disabled></textarea>
+            </div>
+        </div>
+
+        <script>
+        function toggleTextarea(checkbox) {
+            var textarea = document.getElementById('note-textarea');
+            textarea.disabled = !checkbox.checked;
+        }
+        </script>
+
+        <h2>Payment summary</h2>
+        <div>
+            <pre style="font-size: larger;">Subtotal: <span id="subtotal">0.00</span></pre>
+            <pre style="font-size: larger;">Delivery fees: <span id="delivery-fees">0.00</span></pre> 
+            <pre style="font-size: larger;">Service fees: <span id="service-fees">0.00</span></pre> 
+            <pre style="font-size: 18px;"><b>Total amount: </b><span id="Total-amount"><b>0.00</b></span></pre> 
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <button id="Confirm-the-order">Confirm the order</button>
+        </div>
+        <script>
+            document.getElementById("Confirm-the-order").addEventListener("click", function() {
+                window.location.href = "Confirm-the-order.html";  
+            });
+        </script>
+    </section>
+    <footer class ="contact-section" style="margin-top: 1.3rem;">
+            <h2>GET IN TOUCH</h2>
+            <p>We love hearing from customers.<br> We really appreciate you taking the time to get in touch.</p> 
+            <p><strong>Address:</strong> <a href="https://maps.google.com/">438 Kerr St, Oakville, ON L6K 3C4</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+19058499696">(905) 849-8888</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@Little_Lemon.ca" class="email">info@Little_Lemon.ca</a></p> 
+            <p class="hours"><strong>Opening Hours:</strong> 8 AM – 12 PM</p>
+            <a style="position: relative; left: 0%;" href="https://instagram.com/"><img width = "40px" src="https://th.bing.com/th?id=OSK.HNYBSXctCXxuO8S5PKFITXGw3B2MX3XPC_yf7PQd_zQILsc&w=102&h=102&c=7&o=6&oif=webp&dpr=1.3&pid=SANGAM" alt="instagram"></a>
+            <a style="position: relative; left: 2%;" href="https://facebook.com/"><img width = "40px" src="https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=122&h=122&c=7&o=6&oif=webp&dpr=1.3&pid=SANGAM" alt="facebook"></a>
+            <a style="position: relative; left: 4%;" href="https://twitter.com/"><img width = "40px" src="https://th.bing.com/th?id=OSK.50a4337ddb8f32c31afe1610d3d99f0b&w=102&h=102&c=7&o=6&oif=webp&dpr=1.3&pid=SANGAM" alt="twitter"></a>
+            <a style="position: relative; left: 6%;" href="https://snapchat.com/"><img width = "40px" src="https://th.bing.com/th?id=OSK.a90b705de70aea9cc96d2ed43f61dc2f&w=46&h=46&c=11&rs=1&qlt=80&o=6&dpr=1.3&pid=SANGAM" alt="snapchat"></a>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>

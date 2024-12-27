@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Little Lemon Restaurant">
+  <meta name="keywords" content="Little Lemon Restaurant, Little Lemon, Restaurant">
+  <title>Little Lemon</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img id="header-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWhsLEA9tvqBWrlO1T_DUBPrxCnXDKaYLuHYuBroS9cQ3nl1sR" alt="Little Lemon Logo">
+    
+    <div class="icon-container">
+      <div class="login-container">
+        <a href="Login.html"><img class="login-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyGNr2qL63Sfugk2Z1-KBEwMGOfycBribew&s" alt="user"></a>
+        <pre class="login-text"><b>Login</b></pre>
+      </div>
+  
+      <div class="basket-container">
+        <a href="basket.html"><img class="basket-image" src="https://i.pinimg.com/736x/8e/91/3c/8e913cab03621c315f53834358c4bf36.jpg" alt="basket"></a>
+        <pre class="basket-text"><b>Basket</b></pre>
+      </div>
+    </div>
+  
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#book">Book</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="promo">
+      <article>
+        <h1>50% off this weekend</h1>
+        <p>Enjoy a delightful 50% OFF on all our fresh, delicious salads this weekend! </p>
+      </article>
+    </section>
+    <section id="section2">
+      <article>
+        <h2>Our New Menu</h2>
+        <img class="img" src="https://www.kitchensanctuary.com/wp-content/uploads/2020/09/Swedish-Meatballs-Square-FS-38.jpg" alt="Meat balls">
+        <p>Indulge in a culinary delight with our mouthwatering meatballs, crafted with love and bursting with flavor
+          at Little Lemon Restaurant!</p>
+        <a href="#menu">Our New Menu!</a>
+      </article>
+      <article>
+        <h2>Book a table</h2>
+        <img class="img" src="https://cookingorgeous.com/wp-content/uploads/2021/06/lamb-shish-kebab-20.jpg" alt="Kebab">
+        <p>Savor the essence of Middle Eastern cuisine with every Kebab at Little Lemon Restaurant. Join us today and
+          experience the true taste of quality and authenticity.</p>
+        <a href="#book">Book Now!</a>
+      </article>
+      <article>
+        <h2>Opening Hours</h2>
+        <img class="img" src="https://www.healthyseasonalrecipes.com/wp-content/uploads/2019/05/Healthy-Italian-Pasta_salad-1200-sq-017.jpg" alt="healthy salad">
+        <p>Visit Little Lemon Restaurant today and discover why our salads and juices are simply irresistible!</p>
+        <p><span>Open from 8 AM to 12 Midnight, 7 Days a Week!</span></p>
+      </article>
+    </section>
+    <section id="menu">
+      <div id="container">
+        <div id="title">
+          <h2>Our Special Menu</h2>
+        </div>
+        <div id="menu-items">
+          <div id="title">
+            <h2 style="position: relative; left:12%; ">Appetizers</h2> 
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSejrF39V2PqBXByBJsgq7zrdh5r-W3QqeLTg&s" alt="DEVILED EGGS">
+                <div>
+                    <h3>DEVILED EGGS <span class="primary-text">3.00 JD</span></h3>
+                    <p><a href="javascript:void(0);" onclick="addToBasket('DEVILED EGGS', '3.00 JD', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSejrF39V2PqBXByBJsgq7zrdh5r-W3QqeLTg&s')">Order our DEVILED EGGS now!</a></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://cdn.loveandlemons.com/wp-content/uploads/2019/12/stuffed-mushrooms-2.jpg" alt="STUFFED MUSHROOMS">
+                <div>
+                    <h3>STUFFED MUSHROOMS<span class="primary-text">6.00 JD</span></h3>
+                    <p><a href="javascript:void(0);" onclick="addToBasket('STUFFED MUSHROOMS', '6.00 JD', 'https://cdn.loveandlemons.com/wp-content/uploads/2019/12/stuffed-mushrooms-2.jpg')">Order our STUFFED MUSHROOMS now!</a></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.yellowblissroad.com/wp-content/uploads/2019/04/Taquitos-social.jpg" alt="HOMEMADE TAQUITOS">
+                <div>
+                    <h3>HOMEMADE TAQUITOS<span class="primary-text">4.00 JD</span></h3>
+                    <p><a href="javascript:void(0);" onclick="addToBasket('HOMEMADE TAQUITOS', '4.00 JD', 'https://www.yellowblissroad.com/wp-content/uploads/2019/04/Taquitos-social.jpg')">Order our HOMEMADE TAQUITOS now!</a></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://cookingformysoul.com/wp-content/uploads/2019/02/feat2-chicken-quesadillas-500x500.jpg" alt="QUESADILLA RECIPE">
+                <div>
+                    <h3>QUESADILLA RECIPE<span class="primary-text">4.00 JD</span></h3>
+                    <p><a href="javascript:void(0);" onclick="addToBasket('QUESADILLA RECIPE', '4.00 JD', 'https://cookingformysoul.com/wp-content/uploads/2019/02/feat2-chicken-quesadillas-500x500.jpg')">Order our QUESADILLA RECIPE now!</a></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.allrecipes.com/thmb/ruMkE48uz3HozYTuYEbtfLo1DCI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/26819hot-artichoke-and-spinach-dip-ii-LazyFoodieGirl-1x1-1-049f038cbe354960b8e4193bd3f6775b.jpg" alt="SPINACH ARTICHOKE DIP">
+                <div>
+                    <h3>SPINACH ARTICHOKE DIP<span class="primary-text">5.00 JD</span></h3>
+                    <p><a href="javascript:void(0);" onclick="addToBasket('SPINACH ARTICHOKE DIP', '5.00 JD', 'https://www.allrecipes.com/thmb/ruMkE48uz3HozYTuYEbtfLo1DCI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/26819hot-artichoke-and-spinach-dip-ii-LazyFoodieGirl-1x1-1-049f038cbe354960b8e4193bd3f6775b.jpg')">Order our SPINACH ARTICHOKE DIP now!</a></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.themodernproper.com/billowy-turkey/production/posts/CaramelizedOnionDip_9.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1711581638&s=d17961a5d415a2e1375c5be8f7938f83" alt="FRENCH ONION DIP">
+                <div>
+                    <h3>FRENCH ONION DIP<span class="primary-text">3.00 JD</span></h3>
+                    <p><a href="javascript:void(0);" onclick="addToBasket('FRENCH ONION DIP', '3.00 JD', 'https://images.themodernproper.com/billowy-turkey/production/posts/CaramelizedOnionDip_9.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1711581638&s=d17961a5d415a2e1375c5be8f7938f83')">Order our FRENCH ONION DIP now!</a></p>
+                </div>
+            </div>
+            <div id="title">
+                <h2 style="position: relative; left:12%; ">SALAD</h2> 
+            </div>
+            <div class="menu-item">
+                <img src="https://www.kitchensanctuary.com/wp-content/uploads/2021/06/Simple-Green-Salad-with-Vinaigrette-Square-FS-3241.jpg" alt="SIMPLE GREEN SALAD">
+                <div>
+                    <h3>SIMPLE GREEN SALAD<span class="primary-text">3.00 JD</span></h3>
+                    <p><a href="javascript:void(0);" onclick="addToBasket('SIMPLE GREEN SALAD', '3.00 JD', 'https://www.kitchensanctuary.com/wp-content/uploads/2021/06/Simple-Green-Salad-with-Vinaigrette-Square-FS-3241.jpg')">Order our SIMPLE GREEN SALAD now!</a></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.noracooks.com/wp-content/uploads/2022/06/vegan-caesar-salad-4.jpg" alt="CAESAR SALAD">
+                <div>
+                    <h3>CAESAR SALAD<span class="primary-text">5.00 JD</span></h3>
+                    <p><a href="javascript:void(0);" onclick="addToBasket('CAESAR SALAD', '5.00 JD', 'https://www.noracooks.com/wp-content/uploads/2022/06/vegan-caesar-salad-4.jpg')">Order our CAESAR SALAD now!</a></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://kristineskitchenblog.com/wp-content/uploads/2023/06/taco-salad-recipe-14-2.jpg" alt="HEALTHY TACO SALAD">
+                <div>
+                    <h3>HEALTHY TACO SALAD<span class="primary-text">4.00 JD</span></h3>
+                    <p><a href="javascript:void(0);" onclick="addToBasket('HEALTHY TACO SALAD', '4.00 JD', 'https://kristineskitchenblog.com/wp-content/uploads/2023/06/taco-salad-recipe-14-2.jpg')">Order our HEALTHY TACO SALAD now!</a></p>
+                </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ42unTqtml_4N-1DVkQSt9Hqo_0VhLSRpJhJdcbfmjHgGKFIgxm4HI5rpxyriA5UIfvSw&usqp=CAU" alt="CHERRY TOMATO COUSCOUS SALAD">
+              <div>
+                  <h3>CHERRY TOMATO COUSCOUS SALAD<span class="primary-text">3.00 JD</span></h3>
+                  <p><a href="javascript:void(0);" onclick="addToBasket('CHERRY TOMATO COUSCOUS SALAD', '3.00 JD', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ42unTqtml_4N-1DVkQSt9Hqo_0VhLSRpJhJdcbfmjHgGKFIgxm4HI5rpxyriA5UIfvSw&usqp=CAU')">Order our CHERRY TOMATO COUSCOUS SALAD now!</a></p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3RLRcq4GZeBO6u-Nnwv2KLZD8vX73Lyf2nQ&s" alt="BROCCOLI SLAW">
+              <div>
+                  <h3>BROCCOLI SLAW<span class="primary-text">5.00 JD</span></h3>
+                  <p><a href="javascript:void(0);" onclick="addToBasket('BROCCOLI SLAW', '5.00 JD', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3RLRcq4GZeBO6u-Nnwv2KLZD8vX73Lyf2nQ&s')">Order our BROCCOLI SLAW now!</a></p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="https://www.unicornsinthekitchen.com/wp-content/uploads/2022/12/Turkish-smoked-Eggplant-Salad-SQ.jpg" alt="EGGPLANT SALAD">
+              <div>
+                  <h3>EGGPLANT SALAD<span class="primary-text">4.00 JD</span></h3>
+                  <p><a href="javascript:void(0);" onclick="addToBasket('EGGPLANT SALAD', '4.00 JD', 'https://www.unicornsinthekitchen.com/wp-content/uploads/2022/12/Turkish-smoked-Eggplant-Salad-SQ.jpg')">Order our EGGPLANT SALAD now!</a></p>
+              </div>
+          </div>
+          <div id="title">
+              <h2 style="position: relative; left:12%; ">PIZZA</h2> 
+          </div>
+          <div class="menu-item">
+              <img src="https://againstthegraingourmet.com/cdn/shop/products/Pepperoni_Pizza_Beauty_1200x1200.jpg?v=1658703726" alt="PEPPERONI PIZZA">
+              <div>
+                  <h3>PEPPERONI PIZZA<span class="primary-text">8.75 JD</span></h3>
+                  <p><a href="javascript:void(0);" onclick="addToBasket('PEPPERONI PIZZA', '8.75 JD', 'https://againstthegraingourmet.com/cdn/shop/products/Pepperoni_Pizza_Beauty_1200x1200.jpg?v=1658703726')">Order our PEPPERONI PIZZA now!</a></p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="https://images.prismic.io/eataly-us/ed3fcec7-7994-426d-a5e4-a24be5a95afd_pizza-recipe-main.jpg?auto=compress,format" alt="MARGHERITA PIZZA">
+              <div>
+                  <h3>MARGHERITA PIZZA<span class="primary-text">7.50 JD</span></h3>
+                  <p><a href="javascript:void(0);" onclick="addToBasket('MARGHERITA PIZZA', '7.50 JD', 'https://images.prismic.io/eataly-us/ed3fcec7-7994-426d-a5e4-a24be5a95afd_pizza-recipe-main.jpg?auto=compress,format')">Order our MARGHERITA PIZZA now!</a></p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHZDBLkgFXmxjaPHGKWCGdgsh29EL3ODzvPZXP3WgUYKGAHk7usThIsfgKLjug1qWbbI&usqp=CAU" alt="ROMAN PIZZA">
+              <div>
+                  <h3>ROMAN PIZZA<span class="primary-text">10.50 JD</span></h3> 
+                  <p><a href="javascript:void(0);" onclick="addToBasket('ROMAN PIZZA', '10.50 JD', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHZDBLkgFXmxjaPHGKWCGdgsh29EL3ODzvPZXP3WgUYKGAHk7usThIsfgKLjug1qWbbI&usqp=CAU')">Order our ROMAN PIZZA now!</a></p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="https://www.jessicagavin.com/wp-content/uploads/2020/07/hawaiian-pizza-16-1200.jpg" alt="HAWAIIAN PIZZA">
+              <div>
+                  <h3>HAWAIIAN PIZZA<span class="primary-text">11.00 JD</span></h3>
+                  <p><a href="javascript:void(0);" onclick="addToBasket('HAWAIIAN PIZZA', '11.00 JD', 'https://www.jessicagavin.com/wp-content/uploads/2020/07/hawaiian-pizza-16-1200.jpg')">Order our HAWAIIAN PIZZA now!</a></p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHPDq0ogevZuLSutL5qss_9ZHW8EeKNvaTPw&s" alt="DETROIT PIZZA">
+              <div>
+                  <h3>DETROIT PIZZA<span class="primary-text">12.35 JD</span></h3>
+                  <p><a href="javascript:void(0);" onclick="addToBasket('DETROIT PIZZA', '12.35 JD', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHPDq0ogevZuLSutL5qss_9ZHW8EeKNvaTPw&s')">Order our DETROIT PIZZA now!</a></p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="https://againstthegraingourmet.com/cdn/shop/products/ThreeCheese_Pizza_Beauty_d3eeea98-1706-4092-8171-60738ac55937_1000x1000.jpg?v=1658703750" alt="CHEESE PIZZA">
+              <div>
+                  <h3>CHEESE PIZZA<span class="primary-text">6.00 JD</span></h3> 
+                  <p><a href="javascript:void(0);" onclick="addToBasket('CHEESE PIZZA', '6.00 JD', 'https://againstthegraingourmet.com/cdn/shop/products/ThreeCheese_Pizza_Beauty_d3eeea98-1706-4092-8171-60738ac55937_1000x1000.jpg?v=1658703750')">Order our CHEESE PIZZA now!</a></p>
+              </div>
+          </div>
+          <div id="title">
+              <h2 style="position: relative; left:12%; ">BURGER</h2> 
+          </div>
+          <div class="menu-item">
+            <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg" alt="CLASSIC BURGER">
+            <div>
+                <h3>CLASSIC BURGER <span class="primary-text">4.00 JD</span></h3>
+                <p><a href="javascript:void(0);" onclick="addToBasket('CLASSIC BURGER', '4.00 JD', 'https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg')">Order our CLASSIC BURGER now!</a></p>
+            </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/c3/69/b2/burger-market.jpg?w=1200&h=-1&s=1" alt="KAMAKAZI BURGER">
+          <div>
+              <h3>KAMAKAZI BURGER <span class="primary-text">6.50 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('KAMAKAZI BURGER', '6.50 JD', 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/c3/69/b2/burger-market.jpg?w=1200&h=-1&s=1')">Order our KAMAKAZI BURGER now!</a></p>
+          </div>
+      </div>      
+        <div class="menu-item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/50/3d/c3/angus-beef-burger-frites.jpg" alt="ANGUS BURGER">
+            <div>
+                <h3>ANGUS BURGER<span class="primary-text">6.50 JD</span></h3>
+                <p><a href="javascript:void(0);" onclick="addToBasket('ANGUS BURGER', '6.50 JD', 'https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/50/3d/c3/angus-beef-burger-frites.jpg')">Order our ANGUS BURGER now!</a></p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://a.mktgcdn.com/p/I2Fqv67px_r8TM0rSLyN60Kd8EyyVBsCLCaXSOqamCk/1333x1333.png" alt="CARTHAGE CHICKEN BURGER">
+            <div>
+                <h3>CARTHAGE CHICKEN BURGER<span class="primary-text">6.00 JD</span></h3>
+                <p><a href="javascript:void(0);" onclick="addToBasket('CARTHAGE CHICKEN BURGER', '6.00 JD', 'https://a.mktgcdn.com/p/I2Fqv67px_r8TM0rSLyN60Kd8EyyVBsCLCaXSOqamCk/1333x1333.png')">Order our CARTHAGE CHICKEN BURGER now!</a></p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://fireflyburger.com.au/wp-content/uploads/2022/02/crispychicken-single-1.png" alt="BUCHAREST CRISPY CHICKEN">
+            <div>
+                <h3>BUCHAREST CRISPY CHICKEN<span class="primary-text">5.75 JD</span></h3>
+                <p><a href="javascript:void(0);" onclick="addToBasket('BUCHAREST CRISPY CHICKEN', '5.75 JD', 'https://fireflyburger.com.au/wp-content/uploads/2022/02/crispychicken-single-1.png')">Order our BUCHAREST CRISPY CHICKEN now!</a></p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPNe6XdH-OwFclw8IvBsgQSUWCoF1CZEp80l8an2-8GsK-xuYRi61JepaF8k73GusV3sY&usqp=CAU" alt="WALLSTREET CHICKEN BURGER">
+            <div>
+                <h3>WALLSTREET CHICKEN BURGER <span class="primary-text">5.50 JD</span></h3>
+                <p><a href="javascript:void(0);" onclick="addToBasket('WALLSTREET CHICKEN BURGER', '5.50 JD', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPNe6XdH-OwFclw8IvBsgQSUWCoF1CZEp80l8an2-8GsK-xuYRi61JepaF8k73GusV3sY&usqp=CAU')">Order our WALLSTREET CHICKEN BURGER now!</a></p>
+            </div>
+        </div>
+        <div id="title">
+            <h2 style="position: relative; left:12%; ">SHAWARMA</h2> 
+        </div>
+        <div class="menu-item">
+            <img src="https://www.thechunkychef.com/wp-content/uploads/2021/03/Chicken-Shawarma-recipe-card.jpg" alt="CHICKEN SHAWARMA"> 
+            <div>
+                <h3>CHICKEN SHAWARMA<span class="primary-text">3.00 JD</span></h3>
+                <p><a href="javascript:void(0);" onclick="addToBasket('CHICKEN SHAWARMA', '3.00 JD', 'https://www.thechunkychef.com/wp-content/uploads/2021/03/Chicken-Shawarma-recipe-card.jpg')">Order our CHICKEN SHAWARMA now!</a></p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://amiraspantry.com/wp-content/uploads/2020/11/beef-shawarma-recipe-IG.jpg" alt="MEAT SHAWARMA"> 
+            <div>
+                <h3>MEAT SHAWARMA<span class="primary-text">3.50 JD</span></h3> 
+                <p><a href="javascript:void(0);" onclick="addToBasket('MEAT SHAWARMA', '3.50 JD', 'https://amiraspantry.com/wp-content/uploads/2020/11/beef-shawarma-recipe-IG.jpg')">Order our MEAT SHAWARMA now!</a></p>
+            </div>
+        </div>
+        <div id="title">
+            <h2 style="position: relative; left:12%; ">SWEETS</h2> 
+        </div>
+        <div class="menu-item">
+            <img src="https://rawancake.jo/images/products/92.jpg" alt="Rocher Cake Pieces">
+            <div>
+                <h3>Rocher Cake Pieces<span class="primary-text">3.00 JD</span></h3>
+                <p><a href="javascript:void(0);" onclick="addToBasket('Rocher Cake Pieces', '3.00 JD', 'https://rawancake.jo/images/products/92.jpg')">Order our Rocher Cake Pieces now!</a></p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://rawancake.jo/Thumb/84bd9a138972857bd5a25c522ec38737/350x350.0/2.jpg?133644168073443624" alt="Twenty one Box">
+            <div>
+                <h3>Twenty one Box<span class="primary-text">3.00 JD</span></h3>
+                <p><a href="javascript:void(0);" onclick="addToBasket('Twenty one Box', '3.00 JD', 'https://rawancake.jo/Thumb/84bd9a138972857bd5a25c522ec38737/350x350.0/2.jpg?133644168073443624')">Order our Twenty one Box now!</a></p>
+            </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://rawancake.jo/Thumb/93a47302a9a716378dc6513a41f8775e/350x350.0/1.png?133671437375728150" alt="Strawberry cake Pieces">
+          <div>
+              <h3>Strawberry cake Pieces<span class="primary-text">3.00 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('Strawberry cake Pieces', '3.00 JD', 'https://rawancake.jo/Thumb/93a47302a9a716378dc6513a41f8775e/350x350.0/1.png?133671437375728150')">Order our Strawberry cake Pieces now!</a></p>
+          </div>
+      </div>
+      <div class="menu-item">
+          <img src="https://rawancake.jo/Thumb/93d75c6c69d9eb8646127fad4f99cee9/350x350.0/2.jpg?133521125827733484" alt="Toffee Caramel Cake Pieces">
+          <div>
+              <h3>Toffee Caramel Cake Pieces<span class="primary-text">3.00 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('Toffee Caramel Cake Pieces', '3.00 JD', 'https://rawancake.jo/Thumb/93d75c6c69d9eb8646127fad4f99cee9/350x350.0/2.jpg?133521125827733484')">Order our Toffee Caramel Cake Pieces now!</a></p>
+          </div>
+      </div>
+      <div id="title">
+          <h2 style="position: relative; left:12%; ">JUICE & WATER</h2> 
+      </div>
+      <div class="menu-item">
+          <img src="https://cdn.mafrservices.com/sys-master-root/hc3/hee/48158768168990/750996_main.jpg?im=Resize=1700?im=Resize=400" alt="MINERAL WATER"> 
+          <div>
+              <h3>MINERAL WATER<span class="primary-text">1.00 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('MINERAL WATER', '1.00 JD', 'https://cdn.mafrservices.com/sys-master-root/hc3/hee/48158768168990/750996_main.jpg?im=Resize=1700?im=Resize=400')">Order our MINERAL WATER now!</a></p>
+          </div>
+      </div>
+      <div class="menu-item">
+          <img src="https://manhattanwater.com/wp-content/uploads/2020/01/Perrier-plain-glass.jpg" alt="SOFT WATER">
+          <div>
+              <h3>CARBONATED WATER<span class="primary-text">1.50 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('CARBONATED WATER', '1.50 JD', 'https://manhattanwater.com/wp-content/uploads/2020/01/Perrier-plain-glass.jpg')">Order our CARBONATED WATER now!</a></p>
+          </div>
+      </div>
+      <div class="menu-item">
+          <img src="https://www.alphafoodie.com/wp-content/uploads/2021/11/Apple-Juice-Square.jpeg" alt="APPLE JUICE">
+          <div>
+              <h3>APPLE JUICE<span class="primary-text">2.00 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('APPLE JUICE', '2.00 JD', 'https://www.alphafoodie.com/wp-content/uploads/2021/11/Apple-Juice-Square.jpeg')">Order our APPLE JUICE now!</a></p>
+          </div>
+      </div>
+      <div class="menu-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRh65oEsZ4Vw0RnXEetsukmcXbbujLbT7HA&s" alt="ORANGE JUICE">
+          <div>
+              <h3>ORANGE JUICE<span class="primary-text">2.00 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('ORANGE JUICE', '2.00 JD', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRh65oEsZ4Vw0RnXEetsukmcXbbujLbT7HA&s')">Order our ORANGE JUICE now!</a></p>
+          </div>
+      </div>
+      <div class="menu-item">
+          <img src="https://greensmoothiegourmet.com/wp-content/uploads/2023/05/watermelon-juice1aaa.jpg" alt="WATERMELON JUICE">
+          <div>
+              <h3>WATERMELON JUICE<span class="primary-text">2.00 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('WATERMELON JUICE', '2.00 JD', 'https://greensmoothiegourmet.com/wp-content/uploads/2023/05/watermelon-juice1aaa.jpg')">Order our WATERMELON JUICE now!</a></p>
+          </div>
+      </div>
+      <div class="menu-item">
+          <img src="https://thedairyfreemenu.com/wp-content/uploads/2023/03/blueberry-juice-recipe-featured-image.jpg" alt="BLUEBERRY JUICE">
+          <div>
+              <h3>BLUEBERRY JUICE<span class="primary-text">2.00 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('BLUEBERRY JUICE', '2.00 JD', 'https://thedairyfreemenu.com/wp-content/uploads/2023/03/blueberry-juice-recipe-featured-image.jpg')">Order our BLUEBERRY JUICE now!</a></p>
+          </div>
+      </div>
+      <div class="menu-item">
+          <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Cranberry-Juice_EXPS_FT21_42023_F_0602_1.jpg" alt="CRANBERRY JUICE">
+          <div>
+              <h3>CRANBERRY JUICE<span class="primary-text">2.00 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('CRANBERRY JUICE', '2.00 JD', 'https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Cranberry-Juice_EXPS_FT21_42023_F_0602_1.jpg')">Order our CRANBERRY JUICE now!</a></p>
+          </div>
+      </div>
+      <div class="menu-item">
+          <img src="https://www.crazyvegankitchen.com/wp-content/uploads/2023/06/mango-juice-recipe.jpg" alt="MANGO JUICE">
+          <div>
+              <h3>MANGO JUICE<span class="primary-text">2.00 JD</span></h3>
+              <p><a href="javascript:void(0);" onclick="addToBasket('MANGO JUICE', '2.00 JD', 'https://www.crazyvegankitchen.com/wp-content/uploads/2023/06/mango-juice-recipe.jpg')">Order our MANGO JUICE now!</a></p>
+          </div>
+      </div>      
+      </div>
+      </div>
+    </section>
+    <section id="section3">
+      <section id="book">
+        <h1>Book a table</h1>
+        <form action="">
+          <label for="date">Date</label>
+          <input id="date" type="date" required>
+          <hr />
+          <label for="time">Time</label>
+          <input id="time" type="time" required>
+          <hr />
+          <label for="people">Number of people</label>
+          <input id="people" type="number" min="1" max="10" value="1" required>
+          <hr />
+          <label for="name">Client name</label>
+          <input id="name" type="text" required placeholder="Your full name">
+          <hr />
+          <button type="submit">Book now</button>
+        </form>
+      </section>
+      <section id="contact">
+        <h1>Contact us</h1>
+        <form action="">
+          <label for="name">Full name</label>
+          <input id="name" type="text" required placeholder="Your full name">
+          <hr />
+          <label for="email">Email</label>
+          <input id="email" type="email" required placeholder="Your email">
+          <hr />
+          <label for="message">Message</label>
+          <textarea id="message" required placeholder="Your message"></textarea>
+          <hr />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </section>
+  </main>
+  <footer class ="contact-section">
+    <h2>GET IN TOUCH</h2>
+        <p>We love hearing from customers.<br> We really appreciate you taking the time to get in touch.</p> 
+        <p><strong>Address:</strong> <a href="https://maps.google.com/">438 Kerr St, Oakville, ON L6K 3C4</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+19058499696">(905) 849-8888</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@Little_Lemon.ca" class="email">info@Little_Lemon.ca</a></p> 
+        <p class="hours"><strong>Opening Hours:</strong> 8 AM – 12 PM</p>
+        <a style="position: relative; left: 0%;" href="https://instagram.com/"><img width = "40px" src="https://th.bing.com/th?id=OSK.HNYBSXctCXxuO8S5PKFITXGw3B2MX3XPC_yf7PQd_zQILsc&w=102&h=102&c=7&o=6&oif=webp&dpr=1.3&pid=SANGAM" alt="instagram"></a>
+        <a style="position: relative; left: 2%;" href="https://facebook.com/"><img width = "40px" src="https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=122&h=122&c=7&o=6&oif=webp&dpr=1.3&pid=SANGAM" alt="facebook"></a>
+        <a style="position: relative; left: 4%;" href="https://twitter.com/"><img width = "40px" src="https://th.bing.com/th?id=OSK.50a4337ddb8f32c31afe1610d3d99f0b&w=102&h=102&c=7&o=6&oif=webp&dpr=1.3&pid=SANGAM" alt="twitter"></a>
+        <a style="position: relative; left: 6%;" href="https://snapchat.com/"><img width = "40px" src="https://th.bing.com/th?id=OSK.a90b705de70aea9cc96d2ed43f61dc2f&w=46&h=46&c=11&rs=1&qlt=80&o=6&dpr=1.3&pid=SANGAM" alt="snapchat"></a>
+  </footer>
+</body>
+</html>

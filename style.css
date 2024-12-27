@@ -1,0 +1,421 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Header and Navigation */
+header {
+  display: flex;
+  background-color: #ffcc00;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#header-logo {
+  max-width: 100%;
+  height: auto;
+  width: 150px; /* Adjust based on your design */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffcc00;
+  padding: 10px 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px; 
+  padding-right: 20px; 
+}
+
+.login-container, .basket-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.login-image, .basket-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.login-text, .basket-text {
+  font-size: 16px;
+  color: #333; 
+  margin: 0;
+}
+
+.login-text b, .basket-text b {
+  font-weight: bold;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Main Section */
+main {
+  padding: 20px;
+}
+
+#promo {
+  text-align: center;
+  background-image: url(images/top-view-bunch-organic-fruits-with-copy-space.jpg);
+  background-size: cover;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+#promo h1 {
+  font-size: 48px;
+  color: #312c1a;
+  margin-bottom: 20px;
+}
+
+#promo p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #4b4c4d;
+}
+
+#section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+#section2 article {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33% - 40px);
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+#section2 article:hover {
+  transform: scale(1.05);
+}
+
+#section2 article img {
+  width: 100%;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+#section2 article p span {
+  color: #ffcc00;
+  text-align: center;
+  
+}
+
+#section2 article h2 {
+  margin-top: 0;
+}
+
+#section2 article a {
+  color: #ffcc00;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#section2 article a:hover {
+  text-decoration: underline;
+}
+
+/* Menu Section */
+#menu {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #ffcc00, #000);
+}
+
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 80%;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#title h2 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 10px;
+  border: #333 dashed 2px; 
+  background-color: #ffcc00;
+}
+
+#title p {
+  font-size: 18px;
+  color: #666;
+}
+
+#menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+  width: 80px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.menu-item h3 {
+  color: #000;
+  border-bottom: 1px dashed #c2bdbd;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.menu-item span {
+  position: absolute;
+  color: #ffcc00;
+  right: 0;
+  top: 0;
+}
+
+.menu-item p {
+  margin-top: 10px;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s;
+}
+
+/* Booking and Contact Section */
+#section3 {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+#book, #contact {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#book h1, #contact h1 {
+  margin-top: 0;
+}
+
+#book form, #contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#book form label, #contact form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#book form input, #contact form input, #contact form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#book form button, #contact form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffcc00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#book form button:hover, #contact form button:hover {
+  background-color: #e6b800;
+}
+
+/* Footer */
+.contact-section {
+  border: solid 1px black;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #666666; 
+}
+
+.contact-section h2 {
+  font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semi-bold for the heading */
+    color: #333333;
+}
+
+.contact-section p {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 15px;
+    font-size: 16px;
+    color: #888888; /* Lighter shade for text */
+}
+
+.contact-section a {
+    color: #C89C6C; /* Soft brown for links */
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+.contact-section .email,
+.contact-section .hours {
+    font-weight: 600; /* Bold for emphasis */
+    color: #333333;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  #section2 {
+    flex-direction: column;
+  }
+
+  #menu-items {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-item {
+    width: 100%;
+  }
+
+  #title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #title h1 {
+    font-size: 24px;
+  }
+
+  #title p {
+    font-size: 16px;
+  }
+
+  #promo {
+    padding: 30px 20px;
+  }
+
+  #section2 article {
+    padding: 10px;
+  }
+
+  .menu-item {
+    padding: 10px;
+    margin: 5px;
+  }
+}
+#clearBasket{
+  font-size: 20px;
+  background-color: #ffcc00; 
+  border-radius: 6px; 
+  color: white; 
+  border:white ;
+  margin-right: 1.3rem;
+  padding: 5px;
+}
+#Back_to_Menu{
+  border: 1px solid  #ffcc00;
+  color:#ffcc00; 
+  font-size: 20px;
+  padding: 5px; 
+  border-radius: 6px;
+}
+#Confirm-the-order {
+  font-size: 20px;
+  background-color: #ffcc00; 
+  border-radius: 6px; 
+  color: white; 
+  border: white;
+  padding: 10px 20px;
+  width: fit-content;
+}
